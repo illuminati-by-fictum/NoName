@@ -1,0 +1,11 @@
+{
+"development": {
+"host": "localhost",
+"user": "root",
+"password" : "atalanta11",
+"database": "themessenger",
+"driver": "mysql",
+"multipleStatements": true
+},
+"sql-file" : true
+}

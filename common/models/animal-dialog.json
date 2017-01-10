@@ -1,0 +1,34 @@
+{
+  "name": "AnimalDialog",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "animalId": {
+      "type": "number",
+      "required": true
+    },
+    "dialogId": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "animal": {
+      "type": "belongsTo",
+      "model": "Animal"
+    },
+    "dialog": {
+      "type": "belongsTo",
+      "model": "Dialog"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

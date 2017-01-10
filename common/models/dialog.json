@@ -1,0 +1,30 @@
+{
+  "name": "Dialog",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "messages": {
+      "type": "hasMany",
+      "model": "Message"
+    },
+    "animals": {
+      "type": "hasMany",
+      "model": "Animal",
+      "through": "AnimalDialog"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

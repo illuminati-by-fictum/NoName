@@ -1,0 +1,32 @@
+{
+  "name": "Message",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string",
+      "required": true
+    },
+    "animalId": {
+      "type": "number",
+      "required": true
+    },
+    "dialogId": {
+      "type": "number",
+      "required": true
+    },
+    "time": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

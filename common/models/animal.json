@@ -1,0 +1,19 @@
+{
+  "name": "Animal",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "dialogs": {
+      "type": "hasMany",
+      "model": "Dialog",
+      "through": "AnimalDialog"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
